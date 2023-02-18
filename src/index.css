@@ -1,13 +1,194 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Jost&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Jost&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Gloock&family=Prompt:wght@100&family=Quicksand:wght@300&display=swap');
+
+
+*{
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.main-div{
+  /* width: 100%; */
+  /* min-height: 100vh; */
+  background-color:#CD950C	;
+  /***********  vvvimp to bring all in center */
+  display: flex;                
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  min-height: 100vh;
+ 
+}
+
+.center-div{
+  width: 35%;
+  margin-top: 30px;
+  margin-bottom: 100px;
+   
+ 
+  box-shadow: 5px 5px 25px -5px #008000;
+  background-color:#004225;
+  border-radius: 18px;
+}
+
+input{
+  text-align:center;
+  height: 50px;
+  width: 290px;
+  background-color:whitesmoke;
+  font-size: 20px;
+  font-weight: 500;
+  margin-right: 5px;
+  margin-left: 50px;
+  border: 3px solid rgb(37, 56, 37);
+  margin-top: 20px;
+ 
+}
+
+.deletebtn{
+  /* width:100px;
+  height: 65px; */
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px; */
+  color: red;
+  cursor: pointer;
+
+}
+.addbtn{
+
+ color: white;
+  width: 40px;
+  height: 100px;
+ cursor: pointer;
+
+  
+}
+.displayItems{
+  text-align: center;
+  margin-top: 30px;
+}
+
+.eachItem{
+  padding: 7px;
+  border-radius: 7px;
+  margin-bottom: 0.7rem;
+  margin-left: 20px;
+  margin-right: 20px;
+  /* height: 50px; */
+
+  /* impppp prop. to wrap words ***/
+  word-break: break-word;
+  /* background-color:#CCF0C8; */
+  background-color:#F9F6EE;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* transition: all 0.3s; */
+  font-family: 'Quicksand', sans-ser;
+}
+.eachItem:hover {
+  /* border: 1px solid rgb(255, 190, 70); */
+  background-color:#FFAA33;
+  color:whitesmoke;
+
+  
+
+}
+
+.add-items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.deleteAllbtn{
+  width: 150px;
+  height: 60px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+  border-radius: 7px;
+  font-family: 'Jost', sans-serif;
+  font-size: 19px;
+
+  align-items: center;
+
+}
+.deleteAllbtn:hover{
+  background-color:	#FF3131;
+  color: whitesmoke;
+}
+h2{
+  font-family: 'Quicksand', sans-ser;
+  
+}
+h1{
+  font-family: 'Quicksand', sans-ser;
+  color:#FFA500;
+}
+
+figcaption{
+  font-family: 'Quicksand', sans-ser;
+  font-size: 19px;
+  color:whitesmoke;
+}
+
+
+
+
+
+
+img {
+  width: 230px;
+  height: 220px;
+  border-radius: 90px;
+ 
+
+}
+body{
+  /* background-color:steelblue; */
+}
+
+@media (max-width:1000px)  {
+ 
+    input{
+      width: 20vw;
+      font-size: 12px;
+      margin-left: 2px;
+      height: 30px;
+    }
+    
+    .addbtn{
+      width: 10vw;
+    }
+    img{
+      width: 25vw;
+      height: 20vh;
+    }
+    .deleteAllbtn{
+      width: 130px;
+      height: 60px;
+      font-size: 18px;
+    }
+}
+
+@media (max-width:760px)
+{
+  img{
+    height: 14vh;
+  }
+  .deleteAllbtn{
+    width: 70px;
+    height: 40px;
+    font-size: 13px;
+  }
+ 
 }
